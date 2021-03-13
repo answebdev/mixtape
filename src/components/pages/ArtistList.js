@@ -43,12 +43,12 @@ const ArtistList = () => {
   return (
     <div>
       <Helmet>
-        <title>Mixtape | List of Artists</title>
+        <title>Mixtape | Artists</title>
       </Helmet>
       <Container>
         <div className='App'>
           <h3 style={{ marginTop: '40px', marginBottom: '20px' }}>
-            <strong>List of Artists</strong>
+            <strong>Artists</strong>
           </h3>
 
           <hr />
