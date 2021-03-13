@@ -51,6 +51,7 @@ const Artist = ({ match }) => {
             return (
               <div key={item.id}>
                 <h3
+                  className={classes.ArtistHeader}
                   style={{
                     marginBottom: '20px',
                     fontWeight: '700',
@@ -96,7 +97,7 @@ const Artist = ({ match }) => {
 
               {item.tracks.map((track, index) => (
                 <div key={index}>
-                  <p style={{ fontFamily: 'Poppins' }}>{track}</p>
+                  <p className={classes.Tracks}>{track}</p>
                 </div>
               ))}
             </div>

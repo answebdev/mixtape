@@ -47,13 +47,9 @@ const ArtistList = () => {
       </Helmet>
       <Container>
         <div>
-          <h3 style={{ marginTop: '40px', marginBottom: '20px' }}>
-            <strong>Artists</strong>
-          </h3>
+          <h1 className={classes.MainHeader}>Artists</h1>
 
           <hr />
-
-          <h3 className={classes.MainHeader}>Artists</h3>
 
           {/* If not isLoading, show a button to load the data, otherwise show a loading state */}
           {!isLoading ? <div className='text-center'></div> : <Spinner />}
@@ -68,16 +64,18 @@ const ArtistList = () => {
           ) : null}
 
           <p>
-            <div>
-              {/* <div style={artistStyle}> */}
+            <div className={classes.ArtistDiv}>
               {artists.map((artist) => {
                 return (
                   <Row key={artist.id}>
                     <Col>
                       {artists ? (
                         // For dynamic routing:
-                        <Link to={`artists/${artist.id}`}>
-                          <div>{artist.artist}</div>
+                        <Link
+                          className={classes.Link}
+                          to={`artists/${artist.id}`}
+                        >
+                          <p className={classes.Artist}>{artist.artist}</p>
                         </Link>
                       ) : null}
 
