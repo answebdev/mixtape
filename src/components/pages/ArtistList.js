@@ -76,7 +76,7 @@ const ArtistList = () => {
                     <Col>
                       {artists ? (
                         // For dynamic routing:
-                        <Link to={`list-of-artists/${artist.id}`}>
+                        <Link to={`artists/${artist.id}`}>
                           <div>{artist.artist}</div>
                         </Link>
                       ) : null}

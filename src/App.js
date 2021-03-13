@@ -13,8 +13,8 @@ function App() {
       <div className='App'>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/list-of-artists' component={ArtistList} />
-          <Route exact path='/list-of-artists/:id' component={Artist} />
+          <Route exact path='/artists' component={ArtistList} />
+          <Route exact path='/artists/:id' component={Artist} />
         </Switch>
       </div>
     </Router>

@@ -39,7 +39,7 @@ const Artist = ({ match }) => {
       {data.map((item) => (
         <Helmet>
           <title>
-            Mixtape | {item.artist} | {item.album}
+            Mixtape | {item.artist}: {item.album}
           </title>
         </Helmet>
       ))}
@@ -104,7 +104,7 @@ const Artist = ({ match }) => {
           <div style={{ marginBottom: '20px' }}>
             <a
               style={{ backgroundColor: '#2c2c2c' }}
-              href='/list-of-artists'
+              href='/artists'
               class='btn btn-dark'
               role='button'
               aria-pressed='true'

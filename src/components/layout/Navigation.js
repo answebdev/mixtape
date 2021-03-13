@@ -13,7 +13,7 @@ const Navigation = ({ title }) => {
           <ul>
             <li>
               <Link to='/'>Home</Link>
-              <Link to='/list-of-artists'>Artists</Link>
+              <Link to='/artists'>Artists</Link>
             </li>
           </ul>
         </div>
