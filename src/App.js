@@ -4,6 +4,7 @@ import Navigation from './components/layout/Navigation';
 import Home from './components/pages/Home';
 import ArtistList from './components/pages/ArtistList';
 import Artist from './components/pages/Artist';
+import Error from './components/pages/Error';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/artists' component={ArtistList} />
           <Route exact path='/artists/:id' component={Artist} />
+          <Route component={Error} />
         </Switch>
       </div>
     </Router>
