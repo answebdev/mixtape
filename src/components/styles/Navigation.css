@@ -4,14 +4,14 @@
   align-items: center;
   z-index: 1;
   width: 100%;
-  background-color: #2c2c2c !important;
-  /* margin-bottom: 1rem; */
+  background-color: #35362b !important;
+  margin-bottom: 1rem;
+  padding: 15px 0 25px 0;
 }
 
 .nav-title {
   font-family: 'Stardos Stencil', cursive;
   text-transform: uppercase;
-  /* font-family: 'Quicksand', sans-serif; */
   color: #ffeeff;
   font-size: 24px;
   font-weight: 700;
@@ -21,7 +21,6 @@
 }
 
 #links {
-  /* color: #c7d1d8 !important; */
   font-family: 'Quicksand', sans-serif;
   padding: 10px;
   margin-bottom: -15px;

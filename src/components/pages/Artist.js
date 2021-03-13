@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
+import classes from '../styles/Artist.module.css';
 import axios from 'axios';
 
 const Artist = ({ match }) => {
@@ -35,7 +36,7 @@ const Artist = ({ match }) => {
   };
 
   return (
-    <div>
+    <div className={classes.Container}>
       {data.map((item) => (
         <Helmet>
           <title>
@@ -79,7 +80,7 @@ const Artist = ({ match }) => {
           })}
           {data.map((item) => (
             <div style={info}>
-              <p style={{ fontSize: '24px', fontFamily: 'Quicksand' }}>
+              <p style={{ fontSize: '24px', fontFamily: 'Poppins' }}>
                 {item.album} ({item.year})
               </p>
 
@@ -87,7 +88,7 @@ const Artist = ({ match }) => {
                 style={{
                   fontSize: '18px',
                   fontWeight: '700',
-                  fontFamily: 'Quicksand',
+                  fontFamily: 'Poppins',
                 }}
               >
                 Track Listing
@@ -95,7 +96,7 @@ const Artist = ({ match }) => {
 
               {item.tracks.map((track, index) => (
                 <div key={index}>
-                  <p style={{ fontFamily: 'Quicksand' }}>{track}</p>
+                  <p style={{ fontFamily: 'Poppins' }}>{track}</p>
                 </div>
               ))}
             </div>

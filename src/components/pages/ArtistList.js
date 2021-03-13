@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { Container, Row, Col } from 'react-bootstrap';
 import Spinner from '../misc/Spinner';
-import classes from '../styles/Artists.module.css';
+import classes from '../styles/ArtistList.module.css';
 
 const ArtistList = () => {
   const [artists, setArtists] = useState([]);
@@ -41,12 +41,12 @@ const ArtistList = () => {
   // };
 
   return (
-    <div>
+    <div className={classes.Container}>
       <Helmet>
         <title>Mixtape | Artists</title>
       </Helmet>
       <Container>
-        <div className='App'>
+        <div>
           <h3 style={{ marginTop: '40px', marginBottom: '20px' }}>
             <strong>Artists</strong>
           </h3>
