@@ -24,10 +24,6 @@ const Artist = ({ match }) => {
       .catch((err) => console.log(err));
   };
 
-  // const artist = {
-  //   color: 'salmon'
-  // };
-
   const info = {
     marginTop: '45px',
   };
@@ -67,9 +63,8 @@ const Artist = ({ match }) => {
                 </p>
               </div>
 
-              <div style={{ marginBottom: '20px' }}>
+              <div style={{ marginTop: '40px', marginBottom: '40px' }}>
                 <a
-                  style={{ backgroundColor: '#2c2c2c' }}
                   href='/artists'
                   class='btn btn-dark'
                   variant='dark'
@@ -86,19 +81,11 @@ const Artist = ({ match }) => {
         {data.map((item) => (
           <div className={classes.Child2}>
             <div style={info}>
-              <p style={{ fontSize: '24px', fontFamily: 'Poppins' }}>
+              <p className={classes.AlbumYear}>
                 {item.album} ({item.year})
               </p>
 
-              <p
-                style={{
-                  fontSize: '18px',
-                  fontWeight: '700',
-                  fontFamily: 'Poppins',
-                }}
-              >
-                Track Listing
-              </p>
+              <p className={classes.TrackListingHeader}>Track Listing</p>
 
               {item.tracks.map((track, index) => (
                 <div key={index}>

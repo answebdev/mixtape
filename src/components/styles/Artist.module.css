@@ -42,6 +42,17 @@
   width: auto;
 }
 
+.AlbumYear {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+}
+
+.TrackListingHeader {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .Tracks {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
