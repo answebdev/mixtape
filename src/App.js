@@ -5,6 +5,8 @@ import Home from './components/pages/Home';
 import ArtistList from './components/pages/ArtistList';
 import Artist from './components/pages/Artist';
 import Error from './components/pages/Error';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {

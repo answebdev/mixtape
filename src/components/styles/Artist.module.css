@@ -1,18 +1,201 @@
-.Container {
+.MainContainer {
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
-  /* padding: 0 2rem; */
 }
 
+.Parent1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* .Child1 {
+  margin-left: 40px;
+} */
+
+.Child2 {
+  margin-left: 60px;
+}
+
+/* .Parent2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+} */
+
 .ArtistHeader {
-  font-family: 'Stardos Stencil', cursive;
+  /* font-family: 'Stardos Stencil', cursive;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-size: 24px;
+  font-size: 24px; */
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: 'Stardos Stencil', cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.AlbumArtwork {
+  height: 500px;
+  width: auto;
 }
 
 .Tracks {
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+
+  /* line-height: 2.5; */
+}
+
+/* @media (min-width: 500px) and (min-height: 400px) {
+  .Child1 {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 500px) and (min-height: 401px) {
+  .Child1 {
+    margin-left: 40px;
+  }
+} */
+
+/* ===== MEDIA QUERIES ===== */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  /* .MainContainer {
+    background-color: red;
+  } */
+
+  .Child1 {
+    margin-left: 40px;
+  }
+
+  .Child2 {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  /* .MainContainer {
+    background-color: yellow;
+  } */
+
+  .Child1 {
+    margin-left: 40px;
+  }
+
+  .Child2 {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /* .MainContainer {
+    background-color: steelblue;
+  } */
+
+  .Child1 {
+    margin-left: 40px;
+  }
+
+  .Child2 {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 640px) {
+  /* .MainContainer {
+    background-color: brown;
+  } */
+
+  .Child1 {
+    margin-left: 40px;
+  }
+
+  .Child2 {
+    margin-left: 40px;
+  }
+
+  .AlbumArtwork {
+    height: 400px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 550px) {
+  /* .MainContainer {
+    background-color: salmon;
+  } */
+
+  .Child1 {
+    margin-left: 40px;
+  }
+
+  .Child2 {
+    margin-left: 40px;
+  }
+
+  .AlbumArtwork {
+    height: 400px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 470px) {
+  /* .MainContainer {
+    background-color: black;
+  } */
+
+  .Child1 {
+    margin-left: 40px;
+  }
+
+  .Child2 {
+    margin-left: 40px;
+  }
+
+  .AlbumArtwork {
+    height: 300px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 430px) {
+  /* .MainContainer {
+    background-color: burlywood;
+  } */
+
+  .Child1 {
+    margin-left: 40px;
+  }
+
+  .Child2 {
+    margin-left: 40px;
+  }
+
+  .AlbumArtwork {
+    height: 300px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+  /* .MainContainer {
+    background-color: pink;
+  } */
+
+  .Child1 {
+    margin-left: 40px;
+  }
+
+  .Child2 {
+    margin-left: 40px;
+  }
+
+  .AlbumArtwork {
+    height: 300px;
+    width: auto;
+  }
 }
