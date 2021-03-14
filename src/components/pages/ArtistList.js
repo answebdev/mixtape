@@ -24,7 +24,7 @@ const ArtistList = () => {
       .then((data) => {
         setIsLoading(false);
         setArtists(data);
-        console.log(data);
+        // console.log(data);
       })
       .catch((error) => {
         console.error('Error:', error);

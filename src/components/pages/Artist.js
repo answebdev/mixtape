@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Container, Button } from 'react-bootstrap';
+// import { Container, Button } from 'react-bootstrap';
 import classes from '../styles/Artist.module.css';
 import axios from 'axios';
 
+// useHistory hook: https://reactrouter.com/web/api/Hooks
+
 const Artist = ({ match }) => {
   const [data, setData] = useState([]);
+
+  const history = useHistory();
 
   useEffect(() => {
     fetchArtist();
@@ -19,7 +24,7 @@ const Artist = ({ match }) => {
       )
       .then((res) => {
         setData(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((err) => console.log(err));
   };
@@ -66,13 +71,16 @@ const Artist = ({ match }) => {
               <div style={{ marginTop: '40px', marginBottom: '40px' }}>
                 <a
                   href='/artists'
-                  class='btn btn-dark'
+                  className='btn btn-dark'
                   variant='dark'
                   role='button'
                   aria-pressed='true'
                 >
-                  <i class='fas fa-arrow-left' onclick='history.back()'></i>{' '}
-                  BACK TO ARTISTS
+                  <i
+                    className='fas fa-arrow-left'
+                    onClick={() => history.goBack()}
+                  ></i>
+                  &nbsp;BACK TO ARTISTS
                 </a>
               </div>
             </div>
