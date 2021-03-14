@@ -9,6 +9,10 @@
   padding: 15px 0 25px 0;
 }
 
+#nbar {
+  background-color: #35362b !important;
+}
+
 .nav-title {
   font-family: 'Stardos Stencil', cursive;
   text-transform: uppercase;
@@ -48,4 +52,5 @@
 
 .navbar a:hover {
   color: #ffffff;
+  text-decoration: none;
 }

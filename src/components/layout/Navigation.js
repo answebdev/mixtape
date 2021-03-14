@@ -5,7 +5,7 @@ import '../styles/Navigation.css';
 const Navigation = ({ title }) => {
   return (
     <Fragment>
-      <div className='navbar bg-primary'>
+      <div id='nbar' className='navbar bg-primary'>
         <a href='/'>
           <p className='nav-title'>{title}</p>
         </a>
