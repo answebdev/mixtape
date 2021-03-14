@@ -37,7 +37,7 @@ const Artist = ({ match }) => {
     <div className={classes.MainContainer}>
       {data.map((item) => (
         <Helmet>
-          <title>
+          <title key={item.id}>
             Mixtape | {item.artist}: {item.album}
           </title>
         </Helmet>
@@ -46,8 +46,8 @@ const Artist = ({ match }) => {
       <div className={classes.Parent1}>
         {data.map((item) => {
           return (
-            <div className={classes.Child1}>
-              <div key={item.id}>
+            <div key={item.id} className={classes.Child1}>
+              <div>
                 <h3 className={classes.ArtistHeader}>{item.artist}</h3>
                 <img
                   className={classes.AlbumArtwork}
@@ -87,7 +87,7 @@ const Artist = ({ match }) => {
           );
         })}
         {data.map((item) => (
-          <div className={classes.Child2}>
+          <div key={item.id} className={classes.Child2}>
             <div style={info}>
               <p className={classes.AlbumYear}>
                 {item.album} ({item.year})
