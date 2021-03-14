@@ -71,7 +71,7 @@ const Artist = ({ match }) => {
               <div style={{ marginTop: '40px', marginBottom: '40px' }}>
                 <Link
                   to='/artists'
-                  className='btn btn-dark'
+                  className={classes.BackBtn}
                   variant='dark'
                   role='button'
                   aria-pressed='true'

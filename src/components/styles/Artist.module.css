@@ -57,6 +57,33 @@
   font-size: 16px;
 }
 
+.BackBtn {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  background-color: #35362b;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: .25rem;
+  border: 1px solid #35362b;
+  transition: color .15s
+    ease-in-out, background-color .15s
+    ease-in-out, border-color .15s
+    ease-in-out, box-shadow .15s
+    ease-in-out;
+}
+
+.BackBtn:hover {
+  background-color: #ffffff;
+  color:  #35362b;
+  text-decoration: none;
+}
+
+.BackBtn:active {
+  background-color: #35362b;
+  color: #ffffff;
+  border: 1px solid #b2a996;
+}
+
 /* @media (min-width: 500px) and (min-height: 400px) {
   .Child1 {
     margin-left: 40px;
