@@ -1,13 +1,12 @@
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
   width: 100%;
-  background-color: #35362b !important;
   margin-bottom: 1rem;
   padding: 15px 0 25px 0;
-}
+} */
 
 #nbar {
   background-color: #35362b !important;
