@@ -51,7 +51,7 @@ const Artist = ({ match }) => {
                   title={item.album}
                 />
 
-                <p style={{ marginTop: '20px' }}>
+                <p className={classes.Website} style={{ marginTop: '20px' }}>
                   <a
                     href={item.website}
                     rel='noopener noreferrer'
@@ -95,23 +95,6 @@ const Artist = ({ match }) => {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Back Button */}
-      <div className={classes.Parent2}>
-        {/* <div style={{ marginBottom: '20px' }}>
-          <a
-            style={{ backgroundColor: '#2c2c2c' }}
-            href='/artists'
-            class='btn btn-dark'
-            variant='dark'
-            role='button'
-            aria-pressed='true'
-          >
-            <i class='fas fa-arrow-left' onclick='history.back()'></i> BACK TO
-            ARTISTS
-          </a>
-        </div> */}
       </div>
     </div>
   );
