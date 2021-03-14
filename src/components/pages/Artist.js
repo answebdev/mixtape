@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 // import { Container, Button } from 'react-bootstrap';
 import classes from '../styles/Artist.module.css';
@@ -69,8 +69,8 @@ const Artist = ({ match }) => {
               </div>
 
               <div style={{ marginTop: '40px', marginBottom: '40px' }}>
-                <a
-                  href='/artists'
+                <Link
+                  to='/artists'
                   className='btn btn-dark'
                   variant='dark'
                   role='button'
@@ -81,7 +81,7 @@ const Artist = ({ match }) => {
                     onClick={() => history.goBack()}
                   ></i>
                   &nbsp;BACK TO ARTISTS
-                </a>
+                </Link>
               </div>
             </div>
           );

@@ -6,9 +6,9 @@ const Navigation = ({ title }) => {
   return (
     <Fragment>
       <div id='nbar' className='navbar bg-primary'>
-        <a href='/'>
+        <Link to='/'>
           <p className='nav-title'>{title}</p>
-        </a>
+        </Link>
         <div id='links'>
           <ul>
             <li>
