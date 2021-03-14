@@ -59,18 +59,6 @@
   /* line-height: 2.5; */
 }
 
-/* @media (min-width: 500px) and (min-height: 400px) {
-  .Child1 {
-    margin-left: 40px;
-  }
-}
-
-@media (min-width: 500px) and (min-height: 401px) {
-  .Child1 {
-    margin-left: 40px;
-  }
-} */
-
 /* ===== MEDIA QUERIES ===== */
 
 @media screen and (min-width: 981px) and (max-width: 1200px) {
