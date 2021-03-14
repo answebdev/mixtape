@@ -47,6 +47,11 @@ body {
   color: #ffffff;
 }
 
+.Mixtape:hover {
+  color: #b2a996;
+  text-decoration: none;
+}
+
 .Cassette {
   position: absolute;
   width: 20%;
