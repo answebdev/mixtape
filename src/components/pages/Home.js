@@ -34,18 +34,14 @@ const Home = () => {
         <div className={classes.Container}>
           <div className={classes.Steelblue}></div>
           <div className={classes.Salmon}>
-            <p>
-              <Link className={classes.Mixtape} to='/artists'>
-                MIXTAPE
-              </Link>
-            </p>
+            <Link className={classes.Mixtape} to='/artists'>
+              MIXTAPE
+            </Link>
           </div>
           <div className={classes.Khaki}>
-            <p>
-              <Link className={classes.Mixtape} to='/artists'>
-                MIXTAPE
-              </Link>
-            </p>
+            <Link className={classes.Mixtape} to='/artists'>
+              MIXTAPE
+            </Link>
           </div>
           <div className={classes.Violet}></div>
         </div>

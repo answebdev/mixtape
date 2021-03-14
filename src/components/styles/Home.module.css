@@ -68,13 +68,6 @@ body {
   justify-content: center;
 }
 
-#ambulance,
-#react,
-#cat,
-#coffee {
-  position: absolute;
-}
-
 .Violet {
   grid-area: box4;
   background: url('https://images.pexels.com/photos/4351683/pexels-photo-4351683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');

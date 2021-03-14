@@ -5,7 +5,7 @@ function Error() {
   return (
     <div>
       <Helmet>
-        <title>Mixtape | Artists</title>
+        <title>Mixtape | Error</title>
       </Helmet>
       <h1>Error Page</h1>
     </div>
