@@ -33,13 +33,6 @@ const ArtistList = () => {
       });
   };
 
-  // const artistStyle = {
-  //   display: 'grid',
-  //   gridTemplateColumns: 'repeat(3, 1fr)',
-  //   gridGap: '1rem',
-  //   textAlign: 'center',
-  // };
-
   return (
     <div className={classes.Container}>
       <Helmet>
