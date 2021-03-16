@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Parent {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Child1 {
+  text-align: center;
+  color: #35362b;
+}
+
+.Child3 {
+  text-align: center;
+}
+
+.Cassette {
+  width: 100%;
+  height: auto;
+}
+
+.BackBtn {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  background-color: #35362b;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 0.25rem;
+  border: 1px solid #35362b;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.BackBtn:hover {
+  background-color: #ffffff;
+  color: #35362b;
+  text-decoration: none;
+}
+
+.BackBtn:active {
+  background-color: #35362b;
+  color: #ffffff;
+  border: 1px solid #b2a996;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  /*     .CassetteContainer{
+      background-color: red;
+    } */
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  /*    .CassetteContainer {
+      background-color: yellow;
+    } */
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /*     .CassetteContainer {
+      background-color: steelblue;
+    } */
+}
+
+@media screen and (min-width: 551px) and (max-width: 640px) {
+  /*     .CassetteContainer {
+      background-color: brown;
+    } */
+}
+
+@media screen and (min-width: 471px) and (max-width: 550px) {
+  /* .CassetteContainer {
+      background-color: salmon;
+    } */
+  .Cassette {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 470px) {
+  /* .CassetteContainer {
+      background-color: black;
+    } */
+
+  .Cassette {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 430px) {
+  /*     .CassetteContainer {
+      background-color: burlywood;
+    } */
+
+  .Cassette {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+  /*     .CassetteContainer {
+      background-color: pink;
+    } */
+
+  .Cassette {
+    width: 100%;
+    height: auto;
+  }
+}
