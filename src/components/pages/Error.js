@@ -38,7 +38,6 @@ const Error = () => {
               className={classes.Cassette}
               src='https://media2.giphy.com/media/XDutFIsipAQk1iAns2/source.gif'
               alt='Cassette'
-              title='Cassette'
             />
           </div>
           <div className={classes.Child3}>
