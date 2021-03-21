@@ -25,7 +25,7 @@
   font-size: 24px; */
   margin-top: 40px;
   margin-bottom: 30px;
-  font-family: 'Stardos Stencil', cursive;
+  font-family: 'Nunito', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -37,18 +37,18 @@
 }
 
 .AlbumYear {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 24px;
 }
 
 .TrackListingHeader {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
 
 .Tracks {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   /* line-height: 2.5; */
 }
@@ -58,28 +58,25 @@
 }
 
 .BackBtn {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   letter-spacing: 1px;
-  background-color: #35362b;
+  background-color: #313d4c;
   color: #ffffff;
   padding: 6px 12px;
-  border-radius: .25rem;
-  border: 1px solid #35362b;
-  transition: color .15s
-    ease-in-out, background-color .15s
-    ease-in-out, border-color .15s
-    ease-in-out, box-shadow .15s
-    ease-in-out;
+  border-radius: 0.25rem;
+  border: 1px solid #313d4c;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .BackBtn:hover {
   background-color: #ffffff;
-  color:  #35362b;
+  color: #313d4c;
   text-decoration: none;
 }
 
 .BackBtn:active {
-  background-color: #35362b;
+  background-color: #313d4c;
   color: #ffffff;
   border: 1px solid #b2a996;
 }

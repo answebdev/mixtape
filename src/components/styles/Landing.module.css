@@ -1,0 +1,65 @@
+/* Photo by Markus Spiske from Pexels
+https://www.pexels.com/@markusspiske?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  color: #313d4c;
+}
+
+.Header {
+  background-image: url('https://images.pexels.com/photos/92083/pexels-photo-92083.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.H1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.H4 {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 0.3em;
+}
+
+.Button {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #313d4c;
+  border: 1px solid #313d4c;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Button:hover {
+  background-color: #313d4c;
+  color: #ffffff;
+  transition: 0.2s linear;
+  text-decoration: none;
+}

@@ -9,12 +9,12 @@
 } */
 
 #nbar {
-  background-color: #35362b !important;
+  background-color: #313d4c !important;
   padding: 10px 10px;
 }
 
 .nav-title {
-  font-family: 'Stardos Stencil', cursive;
+  font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
   color: #ffeeff;
   font-size: 24px;
@@ -26,7 +26,7 @@
 }
 
 #links {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   padding: 10px 20px;
   /* padding-right: 20px; */
   margin-bottom: -15px;

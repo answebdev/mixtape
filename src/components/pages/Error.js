@@ -19,7 +19,7 @@ const Error = () => {
         body {
           font-family: 'Poppins', sans-serif;
           letter-spacing: 1px;
-          background-color:#b2a996;
+          background-color: #C7D1C8;
         }
         
         .navbar {

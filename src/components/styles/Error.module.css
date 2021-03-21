@@ -14,7 +14,7 @@
 
 .Child1 {
   text-align: center;
-  color: #35362b;
+  color: #313d4c;
 }
 
 .Child3 {
@@ -27,25 +27,25 @@
 }
 
 .BackBtn {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   letter-spacing: 1px;
-  background-color: #35362b;
+  background-color: #313d4c;
   color: #ffffff;
   padding: 6px 12px;
   border-radius: 0.25rem;
-  border: 1px solid #35362b;
+  border: 1px solid #313d4c;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .BackBtn:hover {
   background-color: #ffffff;
-  color: #35362b;
+  color: #313d4c;
   text-decoration: none;
 }
 
 .BackBtn:active {
-  background-color: #35362b;
+  background-color: #313d4c;
   color: #ffffff;
   border: 1px solid #b2a996;
 }
