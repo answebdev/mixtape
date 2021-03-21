@@ -30,11 +30,13 @@ const Landing = () => {
 
       <header className={classes.Header}>
         <h1 className={classes.H1}>Mixtape</h1>
+        <br />
         <h4 className={classes.H4}>
           A Collection of
           <br />
           Desert Island Tunes
         </h4>
+        <br />
         <Link className={classes.Button} to='/artists'>
           Enter
         </Link>

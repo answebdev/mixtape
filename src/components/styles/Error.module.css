@@ -21,6 +21,12 @@
   text-align: center;
 }
 
+.ErrorH4 {
+  font-family: 'Nunito', sans-serif;
+  color: #313d4c;
+  font-weight: 600;
+}
+
 .Cassette {
   width: 100%;
   height: auto;

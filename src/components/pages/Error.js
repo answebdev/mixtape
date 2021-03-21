@@ -30,8 +30,8 @@ const Error = () => {
       <Container className={classes.CassetteContainer} fluid>
         <div className={classes.Parent}>
           <div className={classes.Child1}>
-            <h4>OOPS!</h4>
-            <h4>404 Page Not Found.</h4>
+            <h4 className={classes.ErrorH4}>OOPS!</h4>
+            <h4 className={classes.ErrorH4}>404 Page Not Found.</h4>
           </div>
           <div className={classes.Child2}>
             <img
