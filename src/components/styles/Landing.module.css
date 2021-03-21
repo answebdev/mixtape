@@ -17,7 +17,7 @@ body {
 }
 
 .Header {
-  background-image: url('https://images.pexels.com/photos/92083/pexels-photo-92083.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('../../img/tape.webp');
   height: 100vh;
   background-size: cover;
   display: flex;
