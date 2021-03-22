@@ -9,10 +9,9 @@ const ArtistList = () => {
   const [artists, setArtists] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
-  const apiURL = 'https://personal-music-api.herokuapp.com/albums';
-
   const [search, setSearch] = useState('');
   const [filteredArtists, setFilteredArtists] = useState([]);
+  const apiURL = 'https://personal-music-api.herokuapp.com/albums';
 
   useEffect(() => {
     fetchMusic();

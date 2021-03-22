@@ -51,16 +51,16 @@ body {
   font-size: 1rem;
   padding: 0.5em 1em;
   border-radius: 4px;
-  background-color: #ffffff;
-  color: #313d4c;
+  background-color: #313d4c;
+  color: #ffffff;
   border: 1px solid #313d4c;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .Button:hover {
-  background-color: #313d4c;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #313d4c;
   transition: 0.2s linear;
   text-decoration: none;
 }
