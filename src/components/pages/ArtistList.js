@@ -85,18 +85,37 @@ const ArtistList = () => {
                 return (
                   <Row key={artist.id}>
                     <Col>
-                      {artists ? (
-                        // For dynamic routing:
-                        <Link
-                          className={classes.Link}
-                          to={`artists/${artist.id}`}
-                        >
-                          <p className={classes.Artist}>{artist.artist}</p>
-                        </Link>
-                      ) : null}
+                      <div className={classes.ArtistCard}>
+                        <div>
+                          <img
+                            className={classes.AlbumArtwork}
+                            src={artist.img}
+                            alt=''
+                          />
+                        </div>
+                        <div>
+                          <p className={classes.Artist}>
+                            <strong>{artist.artist}</strong>
+                          </p>
+                          <p className={classes.Album}>{artist.album}</p>
+                          {artists ? (
+                            // For dynamic routing:
+                            <Link
+                              className={classes.Link}
+                              to={`artists/${artist.id}`}
+                            >
+                              {/* <p className={classes.Artist}>{artist.artist}</p> */}
+                              View
+                            </Link>
+                          ) : null}
 
-                      {/* if there's no data and it's not loading, show a message */}
-                      {!artists && !isLoading ? <div>No data yet</div> : null}
+                          {/* if there's no data and it's not loading, show a message */}
+                          {!artists && !isLoading ? (
+                            <div>No data yet</div>
+                          ) : null}
+                        </div>
+                      </div>
+                      <br />
                     </Col>
                   </Row>
                 );

@@ -92,3 +92,65 @@ body {
 .Link:hover {
   text-decoration: none;
 }
+
+.ArtistCard {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+  line-height: 1.2em;
+  background-color: #ffffff;
+  width: 50%;
+  padding: 2em;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+img {
+  height: 100px;
+  width: auto;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .ArtistCard {
+    gap: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ArtistCard {
+    gap: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .ArtistCard {
+    flex-direction: column;
+    gap: 1;
+  }
+}
+
+@media (max-width: 376px) {
+  .ArtistCard {
+    flex-direction: column;
+    gap: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 280px) {
+  .ArtistCard {
+    flex-direction: column;
+    gap: 1;
+    width: 100%;
+  }
+
+  img {
+    height: 55px;
+    width: auto;
+  }
+}
