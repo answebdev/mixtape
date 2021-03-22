@@ -11,6 +11,9 @@ const ArtistList = () => {
   const [error, setError] = useState(false);
   const apiURL = 'https://personal-music-api.herokuapp.com/albums';
 
+  const [search, setSearch] = useState('');
+  const [filteredArtists, setFilteredArtists] = useState([]);
+
   useEffect(() => {
     fetchMusic();
   }, []);
@@ -32,6 +35,14 @@ const ArtistList = () => {
         setIsLoading(false);
       });
   };
+
+  useEffect(() => {
+    setFilteredArtists(
+      artists.filter((artist) =>
+        artist.artist.toLowerCase().includes(search.toLowerCase())
+      )
+    );
+  }, [search, artists]);
 
   return (
     <div className={classes.Container}>
@@ -67,6 +78,54 @@ const ArtistList = () => {
 
           <hr />
 
+          <h3 className={classes.InputHeader}>Search for an artist</h3>
+          <input
+            className={classes.Input}
+            type='text'
+            placeholder='Search Artists'
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <br />
+
+          {filteredArtists.map((artist, id) => (
+            <div key={id} {...artist}>
+              {/* <Row>
+                  <Col> */}
+              <div className={classes.ArtistDiv}>
+                <div className={classes.ArtistCard}>
+                  <div>
+                    <img
+                      className={classes.AlbumArtwork}
+                      src={artist.img}
+                      alt=''
+                    />
+                  </div>
+                  <div>
+                    <p className={classes.Artist}>
+                      <strong>{artist.artist}</strong>
+                    </p>
+                    <p className={classes.Album}>{artist.album}</p>
+                    {artists ? (
+                      // For dynamic routing:
+                      <Link
+                        className={classes.Link}
+                        to={`artists/${artist.id}`}
+                      >
+                        View
+                      </Link>
+                    ) : null}
+
+                    {/* if there's no data and it's not loading, show a message */}
+                    {!artists && !isLoading ? <div>No data yet</div> : null}
+                  </div>
+                </div>
+              </div>
+              {/* </Col>
+                </Row> */}
+              {/* <br /> */}
+            </div>
+          ))}
+
           {/* If not isLoading, show a button to load the data, otherwise show a loading state */}
           {!isLoading ? <div className='text-center'></div> : <Spinner />}
 
@@ -79,49 +138,17 @@ const ArtistList = () => {
             </div>
           ) : null}
 
-          <p>
+          {/* <p>
             <div className={classes.ArtistDiv}>
               {artists.map((artist) => {
                 return (
                   <Row key={artist.id}>
-                    <Col>
-                      <div className={classes.ArtistCard}>
-                        <div>
-                          <img
-                            className={classes.AlbumArtwork}
-                            src={artist.img}
-                            alt=''
-                          />
-                        </div>
-                        <div>
-                          <p className={classes.Artist}>
-                            <strong>{artist.artist}</strong>
-                          </p>
-                          <p className={classes.Album}>{artist.album}</p>
-                          {artists ? (
-                            // For dynamic routing:
-                            <Link
-                              className={classes.Link}
-                              to={`artists/${artist.id}`}
-                            >
-                              {/* <p className={classes.Artist}>{artist.artist}</p> */}
-                              View
-                            </Link>
-                          ) : null}
-
-                          {/* if there's no data and it's not loading, show a message */}
-                          {!artists && !isLoading ? (
-                            <div>No data yet</div>
-                          ) : null}
-                        </div>
-                      </div>
-                      <br />
-                    </Col>
+                    <Col></Col>
                   </Row>
                 );
               })}
             </div>
-          </p>
+          </p> */}
         </div>
       </article>
       {/* </Container> */}

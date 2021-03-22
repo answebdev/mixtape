@@ -80,7 +80,7 @@ body {
 }
 
 .ArtistDiv {
-  margin-top: 40px;
+  margin-top: 20px;
   letter-spacing: 1px;
 }
 
@@ -91,6 +91,27 @@ body {
 
 .Link:hover {
   text-decoration: none;
+}
+
+.InputHeader {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.Input {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #ffffff;
+  width: 50%;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .ArtistCard {
@@ -114,6 +135,9 @@ img {
 
 /* MEDIA QUERIES */
 @media (max-width: 1024px) {
+  .Input {
+    width: 100%;
+  }
   .ArtistCard {
     gap: 1;
     width: 100%;
