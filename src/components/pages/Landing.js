@@ -32,9 +32,8 @@ const Landing = () => {
         <h1 className={classes.H1}>Mixtape</h1>
         <br />
         <h4 className={classes.H4}>
-          A Collection of
-          <br />
-          Desert Island Tunes
+          <p>A Collection of</p>
+          <p>Desert Island Tunes</p>
         </h4>
         <br />
         <Link className={classes.Button} to='/artists'>
