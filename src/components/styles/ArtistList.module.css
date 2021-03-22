@@ -16,7 +16,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #eae9e9;
+  background-color: #eae9e9 !important;
   color: #32362e;
   font-family: 'Nunito', sans-serif;
 }
