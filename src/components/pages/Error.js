@@ -17,7 +17,6 @@ const Error = () => {
         />
         <style type='text/css'>{`
         body {
-          font-family: 'Poppins', sans-serif;
           letter-spacing: 1px;
           background-color: #C7D1C8;
         }

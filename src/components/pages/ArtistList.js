@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Spinner from '../misc/Spinner';
 import classes from '../styles/ArtistList.module.css';
 
@@ -37,8 +37,31 @@ const ArtistList = () => {
     <div className={classes.Container}>
       <Helmet>
         <title>Mixtape | Artists</title>
+        <link
+          rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'
+        />
+        <style type='text/css'>{`        
+        .navbar {
+          display: none;
+        }
+    `}</style>
       </Helmet>
-      <Container>
+      <div className={classes.Background}></div>
+      <main className={classes.Main}>
+        <section className={classes.Card}>
+          <h1 className={classes.Mixtape}>Mixtape</h1>
+          <p>Your stop for desert island tunes.</p>
+          <div className={classes.Back}>
+            <div className={classes.CardLinks}>
+              <a href='/'>Home</a> | <a href='#artists'>Go To Artists</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <article id='artists' className={classes.Article}>
+        {/* <Container> */}
         <div>
           <h1 className={classes.MainHeader}>Artists</h1>
 
@@ -81,7 +104,8 @@ const ArtistList = () => {
             </div>
           </p>
         </div>
-      </Container>
+      </article>
+      {/* </Container> */}
     </div>
   );
 };
