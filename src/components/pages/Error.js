@@ -18,7 +18,7 @@ const Error = () => {
         <style type='text/css'>{`
         body {
           letter-spacing: 1px;
-          background-color: #C7D1C8;
+          background-color: #C7D1C8 !important;
         }
         
         .navbar {
