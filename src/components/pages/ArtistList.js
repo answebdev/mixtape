@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Row, Col } from 'react-bootstrap';
 import Spinner from '../misc/Spinner';
 import classes from '../styles/ArtistList.module.css';
 
@@ -35,6 +34,7 @@ const ArtistList = () => {
       });
   };
 
+  // Search Filter
   useEffect(() => {
     setFilteredArtists(
       artists.filter((artist) =>
@@ -47,10 +47,6 @@ const ArtistList = () => {
     <div className={classes.Container}>
       <Helmet>
         <title>Mixtape | Artists</title>
-        <link
-          rel='stylesheet'
-          href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'
-        />
         <style type='text/css'>{`        
         .navbar {
           display: none;
@@ -71,7 +67,6 @@ const ArtistList = () => {
       </main>
 
       <article id='artists' className={classes.Article}>
-        {/* <Container> */}
         <div>
           <h1 className={classes.MainHeader}>Artists</h1>
 
@@ -86,10 +81,8 @@ const ArtistList = () => {
           />
           <br />
 
-          {filteredArtists.map((artist, id) => (
-            <div key={id} {...artist}>
-              {/* <Row>
-                  <Col> */}
+          {filteredArtists.map((artist) => (
+            <div {...artist}>
               <div className={classes.ArtistDiv}>
                 <div className={classes.ArtistCard}>
                   <div>
@@ -119,9 +112,6 @@ const ArtistList = () => {
                   </div>
                 </div>
               </div>
-              {/* </Col>
-                </Row> */}
-              {/* <br /> */}
             </div>
           ))}
 
@@ -136,21 +126,8 @@ const ArtistList = () => {
               </p>
             </div>
           ) : null}
-
-          {/* <p>
-            <div className={classes.ArtistDiv}>
-              {artists.map((artist) => {
-                return (
-                  <Row key={artist.id}>
-                    <Col></Col>
-                  </Row>
-                );
-              })}
-            </div>
-          </p> */}
         </div>
       </article>
-      {/* </Container> */}
     </div>
   );
 };
