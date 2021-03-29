@@ -78,12 +78,21 @@ const ArtistList = () => {
 
           <h3 className={classes.InputHeader}>Search for an artist</h3>
           <input
-            style={{ fontFamily: 'FontAwesome, Nunito' }}
+            style={{ fontFamily: 'FontAwesome, Nunito', letterSpacing: '1px' }}
             className={classes.Input}
             type='text'
             placeholder='&#xf002;  Search Artists'
             onChange={(e) => setSearch(e.target.value)}
           />
+
+          {/* Source: https://www.youtube.com/watch?v=HkA6ZW0xgns&t=57s (at 15:43)
+            Display message if no contacts found from search: */}
+
+          {/* <div>
+            {filteredArtists.length > 0
+              ? filteredArtists
+              : 'Artist not found'}
+          </div> */}
 
           <br />
 
