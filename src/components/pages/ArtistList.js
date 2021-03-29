@@ -47,6 +47,10 @@ const ArtistList = () => {
     <div className={classes.Container}>
       <Helmet>
         <title>Mixtape | Artists</title>
+        <link
+          rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
+        ></link>
         <style type='text/css'>{`        
         .navbar {
           display: none;
@@ -74,11 +78,13 @@ const ArtistList = () => {
 
           <h3 className={classes.InputHeader}>Search for an artist</h3>
           <input
+            style={{ fontFamily: 'FontAwesome, Nunito' }}
             className={classes.Input}
             type='text'
-            placeholder='Search Artists'
+            placeholder='&#xf002;  Search Artists'
             onChange={(e) => setSearch(e.target.value)}
           />
+
           <br />
 
           {filteredArtists.map((artist) => (
